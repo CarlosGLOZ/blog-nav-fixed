@@ -78,11 +78,15 @@ body {
 .column-nav {
     width: 20%;
     float: left;
+    position: fixed;
+    height: 100vh;
+    background-color: grey;
 }
 
 .column-80 {
     width: 80%;
     float: left;
+    margin-left: 20%;
 }
 
 
@@ -187,28 +191,22 @@ li {
 }
 
 @media only screen and (max-width: 800px) {
-    /*reglas*/
-    /* column-3 pasará de tener 33.33% a 100% */
     .column-3 {
         width: 100%;
     }
-    /*column-4 pasará de tener 25% a 50% */
     .column-4 {
         width: 50%;
     }
     .column-nav,
-    .column-75 {
+    .column-80 {
         width: 100%;
         float: left;
     }
-    /*
-    #card-1 {
-        background-size: cover;
+    .column-nav {
+        position: relative;
+        height: auto;
     }
-    #card-2 {
-        background-size: cover;
+    .column-80 {
+        margin-left: auto;
     }
-    #card-3 {}
-    #card-4 {}
-    */
 }
