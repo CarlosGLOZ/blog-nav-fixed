@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+
+/* Redimensión de fuente utilizando rem */
+
+p {
+    font-size: 1rem;
+}
+
+h1 {
+    margin: 0;
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+
+/* clases predefinidas */
+
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(148, 148, 148);
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Diseño de columnas */
+
+.column-1 {
+    width: 100%;
+    float: left;
+}
+
+.column-2 {
+    width: 50%;
+    float: left;
+}
+
+.column-3 {
+    width: 33.33%;
+    float: left;
+}
+
+.column-4 {
+    width: 25%;
+    float: left;
+}
+
+.column-5 {
+    width: 20%;
+    float: left;
+}
+
+.column-6 {
+    width: 16.66%;
+    float: left;
+}
+
+.column-nav {
+    width: 20%;
+    float: left;
+}
+
+.column-80 {
+    width: 80%;
+    float: left;
+}
+
+
+/* Otras clases */
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    height: 100vh;
+    color: white;
+    background-image: url("../img/jose-g-ortega-castro-HMD_h2eOAdA-unsplash.jpg");
+    /*ajustar la imagen en la horizontal*/
+    background-size: cover;
+    /*mover la imagen para dejarla en el centro*/
+    background-position: center;
+}
+
+.flex {
+    /*display no hace nada por si solo pero es necesario para lo siguiente*/
+    display: flex;
+    /*alinear en vertical*/
+    align-items: center;
+    /*alinear en horizontal*/
+    justify-content: center;
+}
+
+#card-1 {
+    background-image: url("../img/1.jpg");
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#card-2 {
+    background-image: url("../img/2.jpg");
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#card-3 {
+    background-image: url("../img/3.jpg");
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#card-4 {
+    background-image: url("../img/4.jpg");
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#card-5 {
+    background-image: url("../img/5.jpg");
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#card-6 {
+    background-image: url("../img/6.jpg");
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#card-7 {
+    background-image: url("../img/7.jpg");
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.padding-s {
+    padding: 0.5%;
+}
+
+.padding-m {
+    padding: 2.5%;
+}
+
+footer {
+    color: black;
+    font-size: 10px;
+}
+
+.rand-article {
+    background-color: rgb(173, 173, 173);
+}
+
+.back-white {
+    background-color: white;
+}
+
+li {
+    padding-top: 3%;
+}
+
+@media only screen and (max-width: 800px) {
+    /*reglas*/
+    /* column-3 pasará de tener 33.33% a 100% */
+    .column-3 {
+        width: 100%;
+    }
+    /*column-4 pasará de tener 25% a 50% */
+    .column-4 {
+        width: 50%;
+    }
+    .column-nav,
+    .column-75 {
+        width: 100%;
+        float: left;
+    }
+    /*
+    #card-1 {
+        background-size: cover;
+    }
+    #card-2 {
+        background-size: cover;
+    }
+    #card-3 {}
+    #card-4 {}
+    */
+}
